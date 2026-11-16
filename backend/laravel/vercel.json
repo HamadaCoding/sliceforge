@@ -1,0 +1,19 @@
+{
+	"version": 2,
+	"framework": "react",
+	"functions": {
+		"api/index.php": { "runtime": "vercel-php@0.6.0" }
+	},
+	"routes": [
+		{ "src": "/(.*)", "dest": "/api/index.php" }
+	],
+	"env": {
+		"APP_ENV": "production",
+		"APP_DEBUG": "false",
+		"APP_URL": "sliceforge-spritesheetslicer.vercel.app",
+		"APP_KEY": "base64:IRrEcZmrjRE8UsdwFRIcHYaIOs86fIslc1Qz1kthJ50=",
+		"LOG_CHANNEL": "stderr",
+		"CACHE_DRIVER": "array",
+		"SESSION_DRIVER": "cookie"
+	}
+}
